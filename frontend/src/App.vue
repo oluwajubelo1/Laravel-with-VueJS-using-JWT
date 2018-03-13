@@ -1,0 +1,40 @@
+<template>
+  <div id="app">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <router-link to="/quote">Quotes</router-link> |
+          <router-link to="/new-quote">New Quote</router-link>|
+          <router-link to="/login">Login</router-link>|
+          <router-link to="/">Sign Up</router-link>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-xs-12">
+          <router-view></router-view>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</template>
+
+<script>
+  //locally define component
+// import NewQuote from './components/new-quote.vue';
+
+ export default{
+     data(){
+         return{
+
+         }
+     }
+ }
+</script>
+
+<style>
+  #app{
+    margin:30px;
+  }
+</style>
